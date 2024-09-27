@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+      "config": {
+        "type": "object",
+        "properties": {
+            "apples":{
+                "type:": "list",
+                "maxItems": 2,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "color": {
+                            "type": "string",
+                            "description": "The color of the apple, red or green",
+                            "pattern": "^(red|green)$"
+                        },
+                        "size": {
+                            "type": "string",
+                            "description": "The size of the apple, small or large",
+                            "pattern": "^(small|large)$"
+                        },
+                        "quantity": {
+                            "type": "integer",
+                            "description": "The number of apples you want.",
+                            "maximum": 20
+                        }
+                    },
+                    "required": ["color", "size", "quantity"],
+                    "additionalProperties": false
+                }
+            },
+            "blueberries": {
+                "type:": "list",
+                "maxItems": 1,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "organic": {
+                            "type": "boolean",
+                            "description": "Whether the blueberries are organic or not."
+                        },
+                        "quantity": {
+                            "type": "integer",
+                            "description": "The number of blueberries you want."
+                        }
+                    },
+                    "required": ["quantity"],
+                    "additionalProperties": false
+                }
+            }
+        },
+        "description": "Config for apples and blueberries"
+      },
+      "additionalProperties": false
+    },
+    "required": ["config"],
+    "additionalProperties": false
+  }
+  

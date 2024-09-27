@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=config.schema.json
+config:
+  apples: 
+    # Apples must have color, size and quantity.  Multiple apple objects are allowed.
+    # Color can only be red or green.  Try adding a purple apple object!
+    - color: green
+      size: large
+      # Quantity is required.  The orchard won't have more than 20.
+      quantity: 10
+
+    - color: red
+      size: small
+      quantity: 5
+
+    # It would be pointless to include another apple object 
+    # given the orchard only has red and green,
+    # so we limited the number of list items to 2.
+
+  blueberries:
+    # Blueberries must have properties: organic and quantity.
+    # While this is a list, only one blueberry object is allowed.
+    - organic: true
+      quantity: 20
