@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=config.schema.json
+config:
+  apples: 
+    - color: green
+      size: large
+      quantity: 10
+
+    - color: red
+      size: small
+      quantity: 5

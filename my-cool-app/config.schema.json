@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+      "config": {
+        "type": "object",
+        "properties": {
+            "apples":{
+                "type:": "list",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "color": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "string"
+                        },
+                        "quantity": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": ["color", "size", "quantity"],
+                    "additionalProperties": false
+                }
+            }
+        },
+        "description": "config for Apples and Oranges"
+      },
+      "additionalProperties": false
+    },
+    "required": ["config"],
+    "additionalProperties": false
+  }
+  
