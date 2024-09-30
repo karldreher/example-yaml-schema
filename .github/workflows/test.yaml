@@ -4,12 +4,12 @@ on:
   pull_request:
 
 jobs:
-  node:
+  pytest: 
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ".nvmrc"
-      - run: npm install
-      - run: npm test
+      - uses: actions/setup-python@v5
+
+      - run: pip install poetry
+      - run: poetry install
+      - run: poetry run pytest
