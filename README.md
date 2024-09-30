@@ -67,3 +67,12 @@ Once we have the extension installed, the schema in the file is *automatically e
 You should see a red mark appear that will indicate to you that the property is not allowed.  You can also hover over it to get that detail.
 
 It is particularly helpful, that at any time you can mouse over the items in the YAML file, and get more detail about the properties. *Assuming you added a description along the way...*.  You get from your schema, what you put into it. 
+
+
+## Catching errors in CI.
+When using a CI tool to catch errors, it might depend on the overall structure and chosen language of the project.  
+
+A good rundown of different tools for JSON Schema is on the JSON Schema page at https://json-schema.org/tools.  Experientially, *none of these are perfect* and *no one-tool-to-rule-them-all* exists.  So, the potential exists that you may have to make tradeoffs.  
+
+Within this repo, one test suite is demonstrated:  
+- Pytest (using [jsonschema](https://python-jsonschema.readthedocs.io/en/latest/)).  See `test/test_schema.py` for more detail.
