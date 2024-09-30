@@ -1,0 +1,16 @@
+{
+  "name": "my-cool-app",
+  "version": "1.0.0",
+  "description": "How To:  Develop your own YAML schema and have a better time doing it",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0"
+  }
+}
