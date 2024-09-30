@@ -72,7 +72,7 @@ It is particularly helpful, that at any time you can mouse over the items in the
 ## Catching errors in CI.
 When using a CI tool to catch errors, it might depend on the overall structure and chosen language of the project.  
 
-A good rundown of different tools for JSON Schema is on the JSON Schema page at https://json-schema.org/tools.  It is my experience that *none of these are perfect* and no *one-tool-to-rule-them-all* exists.  So, the potential exists that you may have to make tradeoffs.  
+A good rundown of different tools for JSON Schema is on the JSON Schema page at https://json-schema.org/tools.  Experientially, *none of these are perfect* and no *one-tool-to-rule-them-all* exists.  So, the potential exists that you may have to make tradeoffs.  
 
 Within this repo, one test suite is demonstrated:  
 - Pytest (using [jsonschema](https://python-jsonschema.readthedocs.io/en/latest/)).  See `test/test_schema.py` for more detail.
